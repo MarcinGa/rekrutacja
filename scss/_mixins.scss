@@ -21,4 +21,14 @@
     color: #565E66;
     border: 1px solid #DBDBDB;
     border-radius: 5px;
+
+    @media all and (max-width: 991px) {
+        flex-basis: 48%;
+        max-width: 48%;
+    }
+
+    @media all and (max-width: 768px) {
+        flex-basis: 100%; 
+        max-width: 100%;
+    }
 }

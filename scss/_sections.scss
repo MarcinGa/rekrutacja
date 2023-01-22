@@ -1,0 +1,11 @@
+.section {
+    padding: 55px 0;
+
+    &--contact {
+        background-color: #274291;
+        background-image: url('../img/contact-background.png');
+        background-position: center 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

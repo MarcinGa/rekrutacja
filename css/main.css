@@ -5,21 +5,51 @@
   padding: 0;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+@media all and (max-width: 991px) {
+  .container {
+    max-width: 760px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.container--wider {
+  max-width: 1190px;
+}
+
+@media all and (max-width: 991px) {
+  .container--wider {
+    max-width: 760px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container--wider {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
 .section {
   padding: 55px 0;
 }
 
 .section--contact {
   background-color: #274291;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 950px;
-}
-
-.container--wider {
-  max-width: 1190px;
+  background-image: url("../img/contact-background.png");
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -95,6 +125,22 @@
   font-size: 16px;
   line-height: 24px;
   color: #565E66;
+}
+
+@media all and (max-width: 991px) {
+  .form__input {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    max-width: 48%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .form__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 
 .form__input::-webkit-input-placeholder {
@@ -195,6 +241,22 @@
   color: #565E66;
 }
 
+@media all and (max-width: 991px) {
+  .form__select {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    max-width: 48%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .form__select {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
 .form__textarea {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
@@ -214,6 +276,30 @@
   font-size: 16px;
   line-height: 24px;
   color: #565E66;
+}
+
+@media all and (max-width: 991px) {
+  .form__textarea {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    max-width: 48%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .form__textarea {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .form__textarea {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 
 .form__divider {
