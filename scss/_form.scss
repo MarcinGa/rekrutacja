@@ -1,0 +1,99 @@
+@import './mixins';
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__input {
+        @include input-padding;
+        @include roboto-form;
+
+        &::placeholder {
+            @include roboto-form;
+            font-size: 16px;
+            line-height: 24px;
+            color: #565E66;
+        }
+
+        &--checkbox {
+            flex-basis: 15px;
+            height: 15px;
+            background: #fff;
+            border: 1px solid #DBDBDB;
+            border-radius: 3px;
+            margin-bottom: 0;
+            margin-right: 9px;
+        }
+
+        &--submit {
+            font-weight: bold;
+            line-height: 18px;
+            background-color: #35A8E0;
+            height: 52px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            border-color: #35A8E0;
+            text-transform: uppercase;
+            margin: 0 auto;
+            color: #FFF;
+            cursor: pointer;
+            transition: .4s;
+
+            &:hover {
+                border: 1px solid #FFF;
+                background-color: #FFF;
+                color: #35A8E0;
+            }
+        }
+    }
+
+    &__select {
+        @include input-padding;
+        @include roboto-form;
+    }
+
+    &__option {
+        // @include roboto-form;
+        // font-size: 16px;
+        // line-height: 24px;
+        // color: #565E66;
+    }
+
+    &__textarea {
+        @include input-padding;
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 15px 12px;
+        height: 124px;
+        @include roboto-form;
+
+        // &::placeholder {
+            
+        // }
+    }
+
+    &__divider {
+        flex-basis: 100%;
+        margin-top: 29px;
+        margin-bottom: 35px;
+    }
+
+    &__label {
+        @include roboto-regular;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        @include roboto-regular;
+        color: #35A8E0;
+        text-decoration: none;
+        margin: 0 3px;
+    }
+}

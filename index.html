@@ -5,9 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zadanie rekrutacyjne</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/main.css">
+    
 </head>
 <body>
-    
+    <section class="section section--contact">
+        <div class="container container--narrow">
+            <header class="header">
+                <h2 class="header__title header__title--white">Skontaktuj się z nami</h2>
+                <p class="header__paragraph header__paragraph--bigger">Zadzwoń <a href="tel:+48535015835" class="header__link header__link--bigger">+48 535 015 835</a></p>
+            </header>
+            <form action="" class="form">
+                <input type="text" class="form__input" placeholder="Imię i nazwisko">
+                <input type="text" class="form__input" placeholder="Telefon">
+                <input type="text" class="form__input" placeholder="E-mail">
+                <input type="text" class="form__input" placeholder="Firma">
+                <select name="" id="" class="form__select">
+                    <option value="" selected disabled hidden class="form__option">Ilość pracowników</option>
+                    <option value="" class="form__option"></option>
+                    <option value="" class="form__option"></option>
+                </select>
+                <select name="" id="" class="form__select">
+                    <option value="" selected disabled hidden class="form__option">Roczny dochód firmy</option>
+                    <option value="" class="form__option"></option>
+                    <option value="" class="form__option"></option>
+                </select>
+                <textarea name="" id="" cols="30" rows="10" class="form__textarea" placeholder="Wiadomość"></textarea>
+                <div class="form__divider">
+                    <label for="" class="form__label"><input type="checkbox" class="form__input form__input--checkbox">Zapoznałem(-łam) się z <a href="/" class="form__link">Polityką prywatności</a> oraz z <a href="/" class="form__link">Zastrzeżeniami prawnymi</a></label>
+                </div>
+                <input type="submit" value="Wyślij" class="form__input form__input--submit">
+            </form>
+        </div>
+    </section>
 </body>
 </html>

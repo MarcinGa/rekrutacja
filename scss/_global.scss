@@ -3,3 +3,23 @@
     margin: 0;
     padding: 0;
 }
+
+.section {
+    padding: 55px 0;
+    &--contact {
+        background-color: #274291;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 950px;
+
+    // &--narrow {
+
+    // }
+
+    &--wider {
+        max-width: 1190px;
+    }
+}
